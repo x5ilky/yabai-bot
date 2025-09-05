@@ -1,6 +1,7 @@
 # YabaiBot
 
 > YabaiBot is a Discord Music Bot built with TypeScript, discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide) that's forked from [EvoBot](https://github.com/eritislami/evobot)
+
 Code has been modified due to inactivity on the original repository.
 
 ## Requirements
