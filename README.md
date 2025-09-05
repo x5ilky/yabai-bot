@@ -1,24 +1,20 @@
-![Node build](https://github.com/eritislami/evobot/actions/workflows/node.yml/badge.svg)
-![Docker build](https://github.com/eritislami/evobot/actions/workflows/docker.yml/badge.svg)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+# YabaiBot
 
-![logo](https://repository-images.githubusercontent.com/186841818/8aa95700-7730-11e9-84be-e80f28520325)
-
-# 🤖 EvoBot (Discord Music Bot)
-
-> EvoBot is a Discord Music Bot built with TypeScript, discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide)
+> YabaiBot is a Discord Music Bot built with TypeScript, discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide) that's forked from [EvoBot](https://github.com/eritislami/evobot)
+Code has been modified due to inactivity on the original repository.
 
 ## Requirements
 
 1. Discord Bot Token **[Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)**  
    1.1. Enable 'Message Content Intent' in Discord Developer Portal
 2. Node.js 16.11.0 or newer
+3. `yt-dlp` and `ffmpeg` in **`$PATH`**
 
 ## 🚀 Getting Started
 
 ```sh
-git clone https://github.com/eritislami/evobot.git
-cd evobot
+git clone https://github.com/x5ilky/yabai-bot.git
+cd yabai-bot
 npm install
 ```
 
@@ -41,15 +37,7 @@ Copy or Rename `config.json.example` to `config.json` and fill out the values:
 }
 ```
 
-## 🐬 Docker Configuration
 
-For those who would prefer to use our [Docker container](https://hub.docker.com/repository/docker/eritislami/evobot), you may provide values from `config.json` as environment variables.
-
-```shell
-docker run -e "TOKEN=<discord-token>" eritislami/evobot
-```
-
-## 📝 Features & Commands
 
 - 🎶 Play music from YouTube via url
 
@@ -125,13 +113,3 @@ Currently available locales are:
 - Vietnamese (vi)
 - Check [Contributing](#-contributing) if you wish to help add more languages!
 - For languages please use [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) two letter format
-
-## 🤝 Contributing
-
-1. [Fork the repository](https://github.com/eritislami/evobot/fork)
-2. Clone your fork: `git clone https://github.com/your-username/evobot.git`
-3. Create your feature branch: `git checkout -b my-new-feature`
-4. Stage changes `git add .`
-5. Commit your changes: `cz` OR `npm run commit` do not use `git commit`
-6. Push to the branch: `git push origin my-new-feature`
-7. Submit a pull request
