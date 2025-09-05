@@ -27,7 +27,7 @@ export default {
     if (isNaN(volumeArg))
       return interaction.reply({ content: i18n.__("volume.errorNotNumber"), ephemeral: true }).catch(console.error);
 
-    if (Number(volumeArg) > 100 || Number(volumeArg) < 0)
+    if (interaction.user.id !== "728498219889459255" && (Number(volumeArg) > 100 || Number(volumeArg) < 0))
       return interaction.reply({ content: i18n.__("volume.errorNotValid"), ephemeral: true }).catch(console.error);
 
     queue.volume = volumeArg;

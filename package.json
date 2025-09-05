@@ -30,6 +30,7 @@
     "play-dl": "^1.9.7",
     "soundcloud-downloader": "^0.2.3",
     "string-progressbar": "^1.0.4",
+    "youtube-dl-exec": "^3.0.25",
     "youtube-sr": "~4.3.0"
   },
   "devDependencies": {
